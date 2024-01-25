@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE64212D2B620BFF00C1B6AD /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE64212C2B620BFF00C1B6AD /* CharacterView.swift */; };
 		FED9B5EE2B5F15E20055194B /* BBQuotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED9B5ED2B5F15E20055194B /* BBQuotesApp.swift */; };
 		FED9B5F22B5F15E30055194B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FED9B5F12B5F15E30055194B /* Assets.xcassets */; };
 		FED9B5F52B5F15E30055194B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FED9B5F42B5F15E30055194B /* Preview Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE64212C2B620BFF00C1B6AD /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
 		FED9B5EA2B5F15E20055194B /* BBQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED9B5ED2B5F15E20055194B /* BBQuotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBQuotesApp.swift; sourceTree = "<group>"; };
 		FED9B5F12B5F15E30055194B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				FED9B60B2B5F1B800055194B /* ContentView.swift */,
 				FED9B5FD2B5F168D0055194B /* Quote.swift */,
 				FED9B6012B5F168D0055194B /* QuoteView.swift */,
+				FE64212C2B620BFF00C1B6AD /* CharacterView.swift */,
 				FED9B5FB2B5F168D0055194B /* samplecharacter.json */,
 				FED9B6002B5F168D0055194B /* ViewModel.swift */,
 				FED9B5F12B5F15E30055194B /* Assets.xcassets */,
@@ -165,6 +168,7 @@
 				FED9B6092B5F168D0055194B /* QuoteView.swift in Sources */,
 				FED9B6072B5F168D0055194B /* Character.swift in Sources */,
 				FED9B6062B5F168D0055194B /* FetchController.swift in Sources */,
+				FE64212D2B620BFF00C1B6AD /* CharacterView.swift in Sources */,
 				FED9B6082B5F168D0055194B /* ViewModel.swift in Sources */,
 				FED9B60A2B5F168D0055194B /* Constants.swift in Sources */,
 			);
