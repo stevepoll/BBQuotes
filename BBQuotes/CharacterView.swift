@@ -12,7 +12,6 @@ struct CharacterView: View {
   let character: Character
   
   var body: some View {
-    let numImages = character.images.count
     GeometryReader { geo in
       ZStack(alignment: .top) {
         // background image
