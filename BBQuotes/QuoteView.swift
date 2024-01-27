@@ -9,10 +9,11 @@ import SwiftUI
 
 struct QuoteView: View {
   @StateObject private var viewModel = ViewModel(controller: FetchController())
+  @State private var showCharacterInfo = false
   let show: String
   
   var body: some View {
-    let (buttonColor, shadowColor): (Color, Color) = show == ShowName.bb ? (.bbGreen, .bbYellow) : (.bcsBlue, .bcsBrown)
+    let (buttonColor, shadowColor): (Color, Color) = show == Constants.bb ? (.bbGreen, .bbYellow) : (.bcsBlue, .bcsBrown)
     
     GeometryReader { geo in
       ZStack {
@@ -41,6 +42,12 @@ struct QuoteView: View {
                     ProgressView()
                   }
                   .frame(width: geo.size.width/1.1, height: geo.size.height/1.8)
+                  .onTapGesture {
+                    showCharacterInfo.toggle()
+                  }
+                  .sheet(isPresented: $showCharacterInfo) {
+                    CharacterView(show: show, character: data.character)
+                  }
 
                   Text(data.character.name)
                     .padding()
@@ -80,10 +87,11 @@ struct QuoteView: View {
       .frame(width: geo.size.width, height: geo.size.height)
     }
     .ignoresSafeArea()
+    
   }
 }
 
 #Preview {
-  QuoteView(show: ShowName.bb)
+  QuoteView(show: Constants.bb)
     .preferredColorScheme(.dark)
 }
